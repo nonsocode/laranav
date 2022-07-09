@@ -1,0 +1,46 @@
+#lara-menu {
+  --color: #232323;
+  list-style-type: none;
+  padding: 0;
+  display: block;
+  padding: 2rem;
+  top: 0;
+  color: var(--color);
+  position: sticky;
+  font-size: 1rem;
+}
+@media screen and (max-width: 1023px) {
+  #lara-menu {
+    display: none;
+  }
+}
+#lara-menu li {
+  margin: 0.5rem 0;
+}
+#lara-menu li ul {
+  margin-left: 1rem;
+}
+#lara-menu > li > a {
+  font-weight: bold;
+}
+#lara-menu li > a::before {
+  font-weight: bold;
+  content: '#';
+  margin-right: 0.6rem;
+  display: inline-block;
+  color: rgb(235 68 50 / var(--tw-text-opacity));
+}
+#lara-menu code {
+  color: var(--color);
+}
+html.dark #lara-menu {
+  --color: rgb(215 215 220 / var(--tw-text-opacity));
+}
+html.dark #lara-menu code {
+  --background: rgb(37 42 55 / var(--tw-bg-opacity));
+  --color: rgb(235 68 50 / var(--tw-text-opacity));
+}
+
+.laranav__aside {
+  max-height: 100vh !important;
+}
